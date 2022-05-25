@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Проверь карту</title>
+</head>
+<body>
+  <header></header>
+<section class = 'check'>
+  <div class = 'field'>
+    <h3>Проверь номер своей карты</h3>
+    <div class="cards list-unstyled">
+      <img class = 'cart mastercart' src = 'images/logo-mastercard.png' alt="mastercart">
+      <img class = 'cart visa' src = 'images/logo-visa.png'alt="visa">
+      <img class = 'cart mir' src = 'images/logo-mir.png'alt="mir">
+    </div>
+    <form id="form" class="form">
+        <div class="form-group">
+        <input class="form-control" id="card_number" name="card_number" type="text" placeholder="Номер карты" data-original-title="" title="">
+        <button id="submitform" class="btn btn-success">Проверить</button>
+        </div>
+      </form>
+</div>
+</section>
+<section class = 'result'>
+  <div class = 'paySystemBox'>
+  <div class = 'paySystem'>Платежная система:</div>
+  <div class = 'paySystemResult'></div>
+</div>
+<div class = 'validateBox'></div>
+</section>
+<script src="app.js"></script>
+</body>
+</html>
