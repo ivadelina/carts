@@ -3,8 +3,12 @@
         "browser": true,
         "es2021": true
     },
+    "plugins": [
+        "css-modules"
+      ],
     "extends": [
-        "airbnb-base"
+        "airbnb-base",
+        "plugin:css-modules/recommended"
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -15,6 +19,7 @@
           "error",
           "LabeledStatement",
           "WithStatement"
-        ]
+        ],
+        "linebreak-style": ["error", "windows"]
       }
 }
