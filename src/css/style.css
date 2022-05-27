@@ -1,16 +1,16 @@
 * {
-    box-sizing: border-box;
-  }
-  body {
-    background-color: white;
-  }
-  h3 {
-    color:#333;
-  }
-  .cards {
-     display: flex;
-     margin-bottom: 10px;
-  }
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+h3 {
+  color:#333;
+}
+.cards {
+  display: flex;
+  margin-bottom: 10px;
+}
 .cart{
   height: 25px;
   margin: 5px;

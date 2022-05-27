@@ -1,9 +1,8 @@
 /* eslint-disable no-bitwise */
 /* eslint-disable no-cond-assign */
 /* eslint-disable no-plusplus */
-/* eslint-disable linebreak-style */
 /* eslint-disable eqeqeq */
-/* eslint-disable linebreak-style */
+
 import { number, btn, validateBox } from './app';
 
 function moonAlgorithm(setValue) {
@@ -21,7 +20,7 @@ function moonAlgorithm(setValue) {
   return (ch % 10) === 0;
 }
 
-function checkCorrection(event) {
+export default function checkCorrection(event) {
   event.preventDefault();
   validateBox.textContent = '';
   validateBox.classList.remove('red');

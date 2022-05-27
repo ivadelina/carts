@@ -5,7 +5,7 @@ import {
   number, btn, mir, visa, mastercart, allcarts, resultBox,
 } from './app';
 
-function checkPaySystem(event) {
+export default function checkPaySystem(event) {
   event.preventDefault();
   for (const el of allcarts) {
     el.classList.remove('hide');
