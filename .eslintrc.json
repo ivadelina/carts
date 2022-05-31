@@ -2,16 +2,7 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "test": {
-          "presets": [[
-            "@babel/preset-env",
-            {
-              "targets": {
-                "node": "current"
-              }
-            }            
-          ]]
-        }
+        "jest": true
     },
     "plugins": [
         "css-modules",
