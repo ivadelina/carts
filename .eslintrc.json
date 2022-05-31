@@ -14,11 +14,14 @@
         }
     },
     "plugins": [
-        "css-modules"
+        "css-modules",
+        "jest"
       ],
     "extends": [
         "airbnb-base",
-        "plugin:css-modules/recommended"
+        "plugin:css-modules/recommended",
+        "eslint:recommended", 
+        "plugin:jest/recommended"
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
