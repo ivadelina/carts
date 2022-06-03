@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "core-js": "^3.22.6",
-    "eslint-plugin-jest": "^26.2.2"
+    "eslint-plugin-jest": "^26.2.2",
+    "node": "^17.7.2"
   }
 }
