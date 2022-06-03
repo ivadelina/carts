@@ -39,7 +39,7 @@ describe('Credit Card Validator form', () => {
     const input = await form.$('#card_number');
     await input.type('2221003413074827');
     const submit = await form.$('#submitform');
-    submit.click();
+    await submit.click();
     const result = await page.evaluate(() => document.querySelector('.paySystemResult').textContent); 
     expect(result).toBe('МИР');
   });
@@ -50,7 +50,7 @@ describe('Credit Card Validator form', () => {
     const input = await form.$('#card_number');
     await input.type('2221003413074827');
     const submit = await form.$('#submitform');
-    submit.click();
+    await submit.click();
     const result = await page.evaluate(() => document.querySelector('.validateBox').textContent);
     expect(result).toBe('Проверка номера карты пройдена успешно');
   });
@@ -59,9 +59,9 @@ describe('Credit Card Validator form', () => {
     await page.goto(baseUrl);
     const form = await page.$('#form');
     const input = await form.$('#card_number');
-    await input.type('2221003413074827');
+    await input.type('4 5  6  1     2  6  1  2     1  2  3  4     5  4  6  4');
     const submit = await form.$('#submitform');
-    submit.click();
+    await submit.click();
     const result = await page.evaluate(() => document.querySelector('.validateBox').textContent);
     expect(result).toBe('Некорректный номер карты');
   });
