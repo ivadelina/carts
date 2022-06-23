@@ -40,7 +40,7 @@ describe('Credit Card Validator form', () => {
     await input.type('2221003413074827');
     const submit = await form.$('#submitform');
     await submit.click();
-    const result = await page.evaluate(() => document.querySelector('.paySystemResult').textContent); 
+    const result = await page.evaluate(() => document.querySelector('.paySystemResult').textContent);
     expect(result).toBe('МИР');
   });
 
